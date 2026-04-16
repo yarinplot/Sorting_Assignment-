@@ -1,5 +1,5 @@
 # Sorting Algorithm Performance Experiments
-**Student Name:** Yarin Plotnik
+**Student Name:** Yarin Plotnik, Shay Tidhar
 ## Overview
 This project measures and analyzes the runtime performance of different sorting algorithms across arrays of varying configurations (random vs. nearly sorted). 
 **Selected Algorithms Evaluated:**
@@ -69,7 +69,7 @@ Despite processing a million elements, execution completes very quickly. This pe
 
 ### 2. Runtime Estimations for $\mathcal{O}(n^2)$ Algorithms
 To understand why Bubble Sort and Selection Sort were bypassed for inputs of $1,000,000$, we can extrapolate their expected runtimes based on their empirical speeds for a smaller size like $n = 3,000$.
-Because both algorithms grow quadratically ($\mathcal{O}(n^2)$), scaling an array by a factor of $\approx 333.33$ (from $3,000$ to $1,000,000$) increases the runtime by a factor of $(333.33)^2 \approx 111,111$.
+Because both algorithms grow quadratically $(\mathcal{O}(n^2))$, scaling an array by a factor of $\approx 333.33$ (from $3,000$ to $1,000,000$) increases the runtime by a factor of $(333.33)^2 \approx 111,111$.
 
 Based on baseline tests at $n=3,000$:
 - **Bubble Sort Estimation:** `~47,155 seconds` (*approx. 13.1 hours*)
